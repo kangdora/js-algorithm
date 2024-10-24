@@ -4,7 +4,8 @@ function problem3(number) {
   for (let i = 1; i <= number; i++) {
     let str = String(i).split("");
     for (let j = 0; j < number; j++) {
-      if (str[j] == 3 || str[j] == 6 || str[j] == 9) {
+      var tmp = str[j];
+      if (tmp % 3 === 0) {
         cnt += 1;
       }
     }
