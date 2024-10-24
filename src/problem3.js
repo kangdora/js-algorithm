@@ -3,9 +3,9 @@ function problem3(number) {
 
   for (let i = 1; i <= number; i++) {
     let str = String(i).split("");
-    for (let j = 0; j < number; j++) {
-      var tmp = str[j];
-      if (tmp % 3 === 0) {
+    for (let j = 0; j < str.length; j++) {
+      var tmp = Number(str[j]);
+      if (tmp % 3 == 0 && tmp != 0) {
         cnt += 1;
       }
     }
